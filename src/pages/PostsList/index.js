@@ -58,33 +58,3 @@ export default PostsList;
 //   },
 //   body: JSON.stringify(post)
 // })
-
-// {
-//   "-MLpH0F-Zqw41a6OnU3m": {
-//     author: "ER"
-//     image: "https://www.openenglish.com/wp-content/uploads/2017/07/logo-black.png"
-//     subtitle: "Open English"
-//     title: "I can tok wachinton tu"
-//   }
-//   "-MLpH0F-Zqw41a6OnU3m": {
-//     author: "ER"
-//     image: "https://www.openenglish.com/wp-content/uploads/2017/07/logo-black.png"
-//     subtitle: "Open English"
-//     title: "I can tok wachinton tu"
-//   }
-// }
-
-// [
-//   {
-//     title: "Koder aprende React",
-//     subtitle: "Con lagrimas",
-//     image: "http://fddsfdsafdsa.com/fdsafdsa.jpg",
-//     author: "David",
-//   },
-//   {
-//     title: "Leo deja salirme temprano de una junta",
-//     subtitle: "Esto jamás pasará",
-//     image: "http://fddsfdsafdsa.com/fdsafdsa.jpg",
-//     author: "David",
-//   },
-// ]
