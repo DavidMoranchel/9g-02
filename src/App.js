@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 
 // Pages
 import PostsList from "./pages/PostsList";
+import PostDetail from "./pages/PostDetail";
 
 function App() {
   return (
@@ -37,9 +38,10 @@ function App() {
           <Route path="/page2">
             <h1>Contenido de la página 2</h1>
           </Route>
-          <Route path="/posts">
+          <Route exact path="/posts">
             <PostsList />
           </Route>
+          <Route path="/posts/:id" component={PostDetail} />
         </Switch>
       </div>
     </BrowserRouter>
