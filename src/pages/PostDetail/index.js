@@ -8,13 +8,25 @@ class PostsDetail extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   setTimeout(() => this.props.history.push("/page1"), 4000);
-  // }
+  componentDidMount() {
+    fetch(
+      `https://reactsessions-ac545.firebaseio.com/${this.props.match.params.id}.json`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        this.setState({
+          post: data,
+        });
+      });
+  }
 
   render() {
     console.log(this.props);
-    return <div>Hola soy el detalle del post {this.props.match.params.id}</div>;
+    return (
+      <div>
+        <h1>{this.state.post.title}</h1>
+      </div>
+    );
   }
 }
 
