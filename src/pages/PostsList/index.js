@@ -29,11 +29,19 @@ class PostsList extends Component {
 
   renderPosts() {
     return this.state.posts.map(({ key, title, subtitle, author }) => (
-      <Post key={key} title={title} subtitle={subtitle} author={author} />
+      <Post
+        id={key}
+        key={key}
+        title={title}
+        subtitle={subtitle}
+        author={author}
+        push={this.props.history.push}
+      />
     ));
   }
 
   render() {
+    console.log(this.props, "desde la lista");
     return <div>{this.renderPosts()}</div>;
   }
 }

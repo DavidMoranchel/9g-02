@@ -1,10 +1,10 @@
 import "./Post.css";
 
 function Post(props) {
-  const { title, subtitle, author } = props;
+  const { id, title, subtitle, author, push } = props;
 
   return (
-    <div className="Post">
+    <div className="Post" onClick={() => push(`/posts/${id}`)}>
       <h3>{title}</h3>
       <h4>{subtitle}</h4>
       <p>{author}</p>

@@ -4,13 +4,17 @@ class PostsDetail extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: [],
+      post: {},
     };
   }
 
+  // componentDidMount() {
+  //   setTimeout(() => this.props.history.push("/page1"), 4000);
+  // }
+
   render() {
     console.log(this.props);
-    return <div>X</div>;
+    return <div>Hola soy el detalle del post {this.props.match.params.id}</div>;
   }
 }
 

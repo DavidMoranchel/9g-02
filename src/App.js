@@ -25,6 +25,9 @@ function App() {
             <li>
               <Link to="/posts">Posts</Link>
             </li>
+            <li>
+              <Link to="/posts/1">Posts 1</Link>
+            </li>
           </ul>
         </nav>
 
@@ -38,9 +41,7 @@ function App() {
           <Route path="/page2">
             <h1>Contenido de la página 2</h1>
           </Route>
-          <Route exact path="/posts">
-            <PostsList />
-          </Route>
+          <Route exact path="/posts" component={PostsList} />
           <Route path="/posts/:id" component={PostDetail} />
         </Switch>
       </div>
